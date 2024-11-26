@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chitthi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background container for floating images -->
+  <div class="floating-images">
+    <img class="heart-image" src="img/cat.jpeg" alt="Heart" />
+    <img class="heart-image" src="img/dog.png" alt="Heart" />
+    <img class="cute-image" src="img/cat1.jpeg" alt="Cute" />
+    <img class="cute-image" src="img/dog1.png" alt="Cute" />
+  </div>
+
+  <div class="letter-container">
+    <!-- Heart animation -->
+    <div class="heart">❤️</div>  
+    <div class="letter">
+      <div class="header">
+        <h1>Meri Pyari Miss Cumtie Ji</h1>
+      </div>
+      <div class="body">
+        <p>Mujhe pta hai ki mujhe ye letter paper pr dena chahiye tha pr still kuch naya try kiya hai (mera handmade gift hai ye).</p>
+        <p>Ye letter mai pehle hi likh chuka tha bas iss website ko bnane ka wait kr rha tha. Yaad hai uss din jb mai pizza khaya krta tha tb hi likha tha ye letter bhi, jb mai college aaya tha HoD ke saath principal office gya tha uss din mera mood bahot off tha tb mujhe lga ki aapki saari baat maan leni chahiye kyunki aapko sb pta hota hai ki kya hone wala hai, uss din ke baad se hi maine gym lgaya, bahar ka khana chodh diya, health pr dhyan diya aur skincare pr bhi.</p>
+        <p>I know mai pareshaan krta hu pr chota hu na 😊.</p>
+        <p>Aur uss din jb mai ghar pr tha aur aapne video call kiya tha uss time darr nhi lga 😑. Aur wo jb mai ghar se aaya to hug kyu nhi kiya plan to bnaya tha, jo bhi ho maza aa gya aap aayi mere ko lene aur surprise mei liye hot wheels bhi lekr aayi, mst khaya udhar.</p>
+        <p>Sorry uss din cab ke liye, sachi sorry 😔, aur jb aapka pet dard tha usse ek din pehle jb hum mile the mera pet iss <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7vcsxQCCa_ujWNYmvF7izdYohodzYgOQ4tg&s" target="_blank">cat ke jaisa</a> ho gya tha yaad hai 😂. Pr fir mai theek ho gya aur aapki tabiyatt khrab. Uske baad jb ghar gyi thi bahot miss kiya tha ab wapas aake wapas chli gyi 😔, idhar mera mann nhi lgta aapke bina aur ek aap ho ki harr baat pr ghar chale jaate ho 😔.</p>
+        <p>Pichli baar to chakli aur kuch bhi nhi laayi thi iss baar gajar ka halwa le aana. Mere karele ka badla chakli aur uss sb se nikal gya. Aur abhi kuch din se chidh chidh krne ke sorry meri bhi tabiyatt inn dino kharab hi reh rhi hai idhar mausam bahot ajib hai subah thandi hoti hai dopher ko garmi aur raat ko thandi isliye bimar bhi pd gya tha.</p>
+        <p>Baaki LOVE YOU MISS MARATHI JI ❤️💕💕❤️</p>
+      </div>
+      <div class="footer">
+        <p>With all my love,</p>
+        <p>Chota Don</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to change colors and activate floating images after letter unfolds
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        // Change heading color to purple
+        document.querySelector('.header h1').style.color = 'purple';
+        document.querySelector('.footer').style.color = 'purple';
+        
+        // Change body text color to brown
+        const bodyText = document.querySelectorAll('.body p');
+        bodyText.forEach(function(p) {
+          p.style.color = 'brown';
+        });
+
+        // Change background color to pink
+        document.body.style.backgroundColor = 'pink';
+
+        // Start floating images animation
+        document.querySelector('.floating-images').style.display = 'block';
+      }, 5000); // Wait for 5 seconds (same as animation duration)
+    });
+  </script>
+</body>
+</html>
